@@ -56,6 +56,7 @@ function CreateCourse() {
     try {
       // unwrap() gets the returned value or throws if rejected
       const course = await dispatch(createNewCourse(userInput)).unwrap();
+      console.log(course);
 
       // Reset form
       setUserInput({
